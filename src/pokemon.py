@@ -11,8 +11,8 @@ debugutil.DEBUGGING = False
 def main():
     rules = loadrules("pokemon.yaml")
     trees = []
-    trees.append(Tree("(S let me show you my Pokémon)"))
-    trees.append(Tree("(S let me show you my cats)"))
+    trees.append(Tree.fromstring("(S let me show you my Pokémon)"))
+    trees.append(Tree.fromstring("(S let me show you my cats)"))
 
     for tree in trees: 
         translate(tree, rules)

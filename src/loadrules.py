@@ -34,7 +34,7 @@ def tree_or_string(s):
     """Given a string loaded from the yaml, produce either a Tree or a string,
     if it's just a terminal."""
     if s.startswith("("):
-        return Tree(s)
+        return Tree.fromstring(s)
     return s
 
 def paths_as_dicts(fromyaml):

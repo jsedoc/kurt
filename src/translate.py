@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from nltk.treeprettyprinter import *
+
 from operator import itemgetter
 
 from transduce import transduce
@@ -15,7 +17,7 @@ def translate(tr, rules):
         print("  FAILED TO TRANSLATE O NOES.")
 
     for result in theresults:
-        treestr = result.tree.pprint(margin=1000)
+        treestr = TreePrettyPrinter(result.tree).text()
         outtext = " ".join(result.tree.leaves())
         w = result.weight
         output_triples.add((treestr,outtext,w))

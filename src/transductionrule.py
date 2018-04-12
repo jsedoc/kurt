@@ -97,7 +97,7 @@ def tree_index(tr, path):
 def get_top(tr):
     """Given a thing that might be a tree or maybe a terminal string, return
     the 'top' of it -- either the node of a tree, or just the string itself."""
-    return (tr if type(tr) == str else tr.node)
+    return (tr if type(tr) == str else tr.label())
 
 def replace(concrete, lhs, rhs, failok=False):
     """Given a concrete tree (ie, maybe a subtree of a larger tree) and lhs and

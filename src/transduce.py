@@ -60,7 +60,7 @@ def transduce(tree, rules, initial):
     return complete
 
 def main():
-    tr = Tree("(A (B D E) (C F G))")
+    tr = Tree.fromstring("(A (B D E) (C F G))")
     rules = loadrules("figure5.yaml")
 
     theresults = transduce(tr, rules, "q")

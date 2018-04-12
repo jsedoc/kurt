@@ -13,10 +13,10 @@ def main():
     trees = []
 
     ## I like eating / Ich esse gern
-    trees.append(Tree("(S (NP (PRP I)) (VP (VB like) (VBG eating)))"))
+    trees.append(Tree.fromstring("(S (NP (PRP I)) (VP (VB like) (VBG eating)))"))
 
     ## I am hungry / Ich habe Hunger
-    trees.append(Tree("(S (NP (PRP I)) (VP (VB am) (JJ hungry)))"))
+    trees.append(Tree.fromstring("(S (NP (PRP I)) (VP (VB am) (JJ hungry)))"))
 
     for tree in trees: 
         translate(tree, rules)
