@@ -4,24 +4,354 @@
   rhs: '(1 ?x1 ?x0)'
   newstates:
     - [[0], q]
-    - [[1], q]
-#    - [[0,0], q]
-#    - [[1,1], q]
-#    - [[0,1], q]
-#    - [[1,0], q]
-    
+    - [[1], q]    
   weight: 1.0
 
-# rule Rewrite
+- state: q
+  lhs: '(10 ?x0 ?x1)'
+  rhs: '(10 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(20 ?x0 ?x1)'
+  rhs: '(20 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(30 ?x0 ?x1)'
+  rhs: '(30 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(40 ?x0 ?x1)'
+  rhs: '(40 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(50 ?x0 ?x1)'
+  rhs: '(50 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(60 ?x0 ?x1)'
+  rhs: '(60 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(70 ?x0 ?x1)'
+  rhs: '(70 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(80 ?x0 ?x1)'
+  rhs: '(80 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(90 ?x0 ?x1)'
+  rhs: '(90 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(100 ?x0 ?x1)'
+  rhs: '(100 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(110 ?x0 ?x1)'
+  rhs: '(110 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+- state: q
+  lhs: '(120 ?x0 ?x1)'
+  rhs: '(120 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(130 ?x0 ?x1)'
+  rhs: '(130 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(140 ?x0 ?x1)'
+  rhs: '(140 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(150 ?x0 ?x1)'
+  rhs: '(150 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(160 ?x0 ?x1)'
+  rhs: '(160 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(170 ?x0 ?x1)'
+  rhs: '(170 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(180 ?x0 ?x1)'
+  rhs: '(180 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(190 ?x0 ?x1)'
+  rhs: '(190 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(200 ?x0 ?x1)'
+  rhs: '(200 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(210 ?x0 ?x1)'
+  rhs: '(210 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(220 ?x0 ?x1)'
+  rhs: '(220 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(230 ?x0 ?x1)'
+  rhs: '(230 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+- state: q
+  lhs: '(240 ?x0 ?x1)'
+  rhs: '(240 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]    
+  weight: 1.0
+
+# Rule1 Rewrite
 - state: q
   lhs: '(2 ?x0 ?x1)'
-  rhs: '(3 ?x0 ?x1)'
+  rhs: '(20 ?x0 ?x1)'
   newstates:
     - [[1], q]
     - [[0], q]
-    
+  weight: 1.0
+  
+- state: q
+  lhs: '(3 ?x0 ?x1)'
+  rhs: '(30 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(4 ?x0 ?x1)'
+  rhs: '(40 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(5 ?x0 ?x1)'
+  rhs: '(50 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(6 ?x0 ?x1)'
+  rhs: '(60 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(7 ?x0 ?x1)'
+  rhs: '(70 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
   weight: 1.0
 
+- state: q
+  lhs: '(8 ?x0 ?x1)'
+  rhs: '(80 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(9 ?x0 ?x1)'
+  rhs: '(90 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(10 ?x0 ?x1)'
+  rhs: '(100 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+
+- state: q
+  lhs: '(11 ?x0 ?x1)'
+  rhs: '(110 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(12 ?x0 ?x1)'
+  rhs: '(120 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(13 ?x0 ?x1)'
+  rhs: '(130 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(14 ?x0 ?x1)'
+  rhs: '(140 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(15 ?x0 ?x1)'
+  rhs: '(150 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(16 ?x0 ?x1)'
+  rhs: '(160 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(17 ?x0 ?x1)'
+  rhs: '(170 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+
+- state: q
+  lhs: '(18 ?x0 ?x1)'
+  rhs: '(180 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(19 ?x0 ?x1)'
+  rhs: '(190 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+- state: q
+  lhs: '(20 ?x0 ?x1)'
+  rhs: '(200 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+  weight: 1.0
+  
+# Rule2 Rewrite
 - state: q
   lhs: '4'
   rhs: '5'
@@ -35,6 +365,196 @@
 - state: q
   lhs: '14'
   rhs: '13'
+  weight: 1.0
+  
+- state: q
+  lhs: '5'
+  rhs: '6'
+  weight: 1.0
+
+- state: q
+  lhs: '6'
+  rhs: '7'
+  weight: 1.0
+
+- state: q
+  lhs: '7'
+  rhs: '8'
+  weight: 1.0
+
+- state: q
+  lhs: '8'
+  rhs: '9'
+  weight: 1.0
+
+- state: q
+  lhs: '9'
+  rhs: '10'
+  weight: 1.0
+
+- state: q
+  lhs: '10'
+  rhs: '11'
+  weight: 1.0
+  
+- state: q
+  lhs: '11'
+  rhs: '12'
+  weight: 1.0
+
+- state: q
+  lhs: '12'
+  rhs: '13'
+  weight: 1.0
+
+- state: q
+  lhs: '13'
+  rhs: '14'
+  weight: 1.0
+
+- state: q
+  lhs: '14'
+  rhs: '15'
+  weight: 1.0
+  
+- state: q
+  lhs: '15'
+  rhs: '16'
+  weight: 1.0
+
+- state: q
+  lhs: '16'
+  rhs: '17'
+  weight: 1.0
+
+- state: q
+  lhs: '17'
+  rhs: '18'
+  weight: 1.0
+
+- state: q
+  lhs: '18'
+  rhs: '19'
+  weight: 1.0
+
+- state: q
+  lhs: '19'
+  rhs: '20'
+  weight: 1.0
+
+- state: q
+  lhs: '20'
+  rhs: '21'
+  weight: 1.0
+  
+- state: q
+  lhs: '21'
+  rhs: '22'
+  weight: 1.0
+
+- state: q
+  lhs: '22'
+  rhs: '23'
+  weight: 1.0
+
+- state: q
+  lhs: '23'
+  rhs: '24'
+  weight: 1.0
+
+- state: q
+  lhs: '50'
+  rhs: '60'
+  weight: 1.0
+
+- state: q
+  lhs: '60'
+  rhs: '70'
+  weight: 1.0
+
+- state: q
+  lhs: '70'
+  rhs: '80'
+  weight: 1.0
+
+- state: q
+  lhs: '80'
+  rhs: '90'
+  weight: 1.0
+
+- state: q
+  lhs: '90'
+  rhs: '100'
+  weight: 1.0
+
+- state: q
+  lhs: '100'
+  rhs: '110'
+  weight: 1.0
+  
+- state: q
+  lhs: '110'
+  rhs: '120'
+  weight: 1.0
+
+- state: q
+  lhs: '120'
+  rhs: '130'
+  weight: 1.0
+
+- state: q
+  lhs: '130'
+  rhs: '140'
+  weight: 1.0
+
+- state: q
+  lhs: '140'
+  rhs: '150'
+  weight: 1.0
+  
+- state: q
+  lhs: '150'
+  rhs: '160'
+  weight: 1.0
+
+- state: q
+  lhs: '160'
+  rhs: '170'
+  weight: 1.0
+
+- state: q
+  lhs: '170'
+  rhs: '180'
+  weight: 1.0
+
+- state: q
+  lhs: '180'
+  rhs: '190'
+  weight: 1.0
+
+- state: q
+  lhs: '190'
+  rhs: '200'
+  weight: 1.0
+
+- state: q
+  lhs: '200'
+  rhs: '210'
+  weight: 1.0
+  
+- state: q
+  lhs: '210'
+  rhs: '220'
+  weight: 1.0
+
+- state: q
+  lhs: '220'
+  rhs: '230'
+  weight: 1.0
+
+- state: q
+  lhs: '230'
+  rhs: '240'
   weight: 1.0
   
 # rule Delete
@@ -61,7 +581,56 @@
   weight: 1.0
 
 - state: q
-  lhs: '(7 (8 9))'
-  rhs: '7'
+  lhs: '(70 (80 90))'
+  rhs: '70'
+  weight: 1.0
+  
+- state: q
+  lhs: '(70 80 90)'
+  rhs: '70'
+  weight: 1.0
+  
+- state: q
+  lhs: '(50 (60 ?x0))'
+  rhs: '(110 ?x0)'
+  newstates:
+    - [[0], q]
+  weight: 1.0
+
+- state: q
+  lhs: '(50 60)'
+  rhs: '50'
+  weight: 1.0
+
+- state: q
+  lhs: '(70 110)'
+  rhs: '70'
+  weight: 1.0
+
+- state: q
+  lhs: '(170 (180 190))'
+  rhs: '170'
+  weight: 1.0
+
+- state: q
+  lhs: '(170 180 190)'
+  rhs: '170'
+  weight: 1.0
+  
+- state: q
+  lhs: '(150 (160 ?x0))'
+  rhs: '(210 ?x0)'
+  newstates:
+    - [[0], q]
+  weight: 1.0
+
+- state: q
+  lhs: '(150 160)'
+  rhs: '150'
+  weight: 1.0
+
+- state: q
+  lhs: '(170 210)'
+  rhs: '170'
   weight: 1.0
   
