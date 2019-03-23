@@ -70,18 +70,27 @@ def transduce(tree, rules, initial):
     return complete
 
 def create_data():
+    count = 0
+    tried = 0
     rules = loadrules("deterministic.yaml")
-    f = open('data.txt')
+    f = open('/Users/dishajindal/Documents/Code/TreeLearning/train.orig')
     input = open("input.txt","w+")
     output = open("output.txt","w+")
     line = f.readline()
     while line:
+        tried = tried+1
         tr = Tree.fromstring(line)
         theresults = transduce(tr, rules, "q")
+        if(tried%1000 ==0):
+            print("Tried: " + str(tried))
+            print("Generated: " + str(count))
+            
         if(len(theresults) > 0):
+            count = count+1
             input.write(line)
             output.write(str(theresults[0].tree) + "\n")
         line = f.readline()
+    print("Generated: " + str(count))
     f.close()
     input.close()
     output.close()
