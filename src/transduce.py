@@ -83,6 +83,8 @@ def create_data():
             output.write(str(theresults[0].tree) + "\n")
         line = f.readline()
     f.close()
+    input.close()
+    output.close()
 
 def main():
     create_data()
