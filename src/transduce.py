@@ -69,14 +69,31 @@ def transduce(tree, rules, initial):
             current = nextgen
     return complete
 
-def main():
-#    tr = Tree.fromstring("(A (B D E) (C F G))")
-    tr = Tree.fromstring("(1 (2 3 4) (5 (6 (7 8 9))))")
-#    tr.pretty_print()
+def create_data():
     rules = loadrules("deterministic.yaml")
-    theresults = transduce(tr, rules, "q")
-    print(tr)
-    print(theresults[0].tree)
+    f = open('data.txt')
+    input = open("input.txt","w+")
+    output = open("output.txt","w+")
+    line = f.readline()
+    while line:
+        tr = Tree.fromstring(line)
+        theresults = transduce(tr, rules, "q")
+        if(len(theresults) > 0):
+            input.write(line)
+            output.write(str(theresults[0].tree) + "\n")
+        line = f.readline()
+    f.close()
+
+def main():
+    create_data()
+#    tr = Tree.fromstring("(1 (2 3 4) (5 (6 (7 8 9))))")
+#    tr = Tree.fromstring("(1 (2 3 40) (5 (6 (7 8 20))))")
+#    tr.pretty_print()
+#    rules = loadrules("deterministic.yaml")
+#    theresults = transduce(tr, rules, "q")
+#    if(len(theresults) > 0):
+#        print(tr)   
+#        print(theresults[0].tree)
 #    print("[[[done]]]")
     
 #    for (i, result) in enumerate(theresults):
