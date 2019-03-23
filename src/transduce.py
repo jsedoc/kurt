@@ -6,6 +6,16 @@ from nltk import Tree
 from loadrules import loadrules
 from debugutil import dprint
 import transductionrule
+#import sys, inspect
+#clsmembers = inspect.getmembers(sys.modules[XTRule], inspect.isclass)
+
+
+import sklearn
+#import nltk
+#nltk.download('punkt')
+
+#print('The nltk version is {}.'.format(nltk.__version__))
+#print('The scikit-learn version is {}.'.format(sklearn.__version__))
 
 class SearchState:
     def __init__(self, tree, statemap, weight):
@@ -60,13 +70,17 @@ def transduce(tree, rules, initial):
     return complete
 
 def main():
-    tr = Tree.fromstring("(A (B D E) (C F G))")
-    rules = loadrules("figure5.yaml")
-
+#    tr = Tree.fromstring("(A (B D E) (C F G))")
+    tr = Tree.fromstring("(1 (2 3 4) (5 (6 (7 8 9))))")
+#    tr.pretty_print()
+    rules = loadrules("deterministic.yaml")
     theresults = transduce(tr, rules, "q")
-    print("[[[done]]]")
-    for (i, result) in enumerate(theresults):
-        print("*** {0} ***".format(i))
-        print(result)
+    print(tr)
+    print(theresults[0].tree)
+#    print("[[[done]]]")
+    
+#    for (i, result) in enumerate(theresults):
+#        print("*** {0} ***".format(i))
+#        print(result.tree)
 
 if __name__ == "__main__": main()

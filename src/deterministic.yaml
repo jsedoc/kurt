@@ -1,0 +1,67 @@
+# rule Replace
+- state: q
+  lhs: '(1 ?x0 ?x1)'
+  rhs: '(1 ?x1 ?x0)'
+  newstates:
+    - [[0], q]
+    - [[1], q]
+#    - [[0,0], q]
+#    - [[1,1], q]
+#    - [[0,1], q]
+#    - [[1,0], q]
+    
+  weight: 1.0
+
+# rule Rewrite
+- state: q
+  lhs: '(2 ?x0 ?x1)'
+  rhs: '(3 ?x0 ?x1)'
+  newstates:
+    - [[1], q]
+    - [[0], q]
+    
+  weight: 1.0
+
+- state: q
+  lhs: '4'
+  rhs: '5'
+  weight: 1.0
+
+- state: q
+  lhs: '3'
+  rhs: '6'
+  weight: 1.0
+
+- state: q
+  lhs: '14'
+  rhs: '13'
+  weight: 1.0
+  
+# rule Delete
+- state: q
+  lhs: '(7 8 9)'
+  rhs: '12'
+  weight: 1.0
+  
+- state: q
+  lhs: '(5 (6 ?x0))'
+  rhs: '(11 ?x0)'
+  newstates:
+    - [[0], q]
+  weight: 1.0
+
+- state: q
+  lhs: '(5 6)'
+  rhs: '5'
+  weight: 1.0
+
+- state: q
+  lhs: '(7 11)'
+  rhs: '7'
+  weight: 1.0
+
+- state: q
+  lhs: '(7 (8 9))'
+  rhs: '7'
+  weight: 1.0
+  
