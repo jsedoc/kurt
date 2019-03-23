@@ -7,9 +7,9 @@ KURT is a Python 3 library for experimenting with xT tree transducers, which
 take in trees and produce other trees; they're described more fully in the
 lovely article by Graehl et al [0].
 
-KURT uses some code from NLTK (http://nltk.org), but just the minimally
-required parts to make Tree objects work; these parts have been ported from
-Python 2.
+KURT uses some code from NLTK version 3.4 (http://nltk.org), but just the minimally
+required parts to make Tree objects work. It is the requirements file.
+
 
 For usage examples, please see src/spanish.py, german.py, and pokemon.py !
 
