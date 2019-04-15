@@ -6,7 +6,7 @@ from nltk import Tree
 from loadrules import loadrules
 from debugutil import dprint
 import transductionrule
-#import sys, inspect
+import sys, inspect
 #clsmembers = inspect.getmembers(sys.modules[XTRule], inspect.isclass)
 
 
@@ -73,7 +73,7 @@ def create_data():
     count = 0
     tried = 0
     rules = loadrules("deterministic.yaml")
-    f = open('/Users/dishajindal/Documents/Code/TreeLearning/train.orig')
+    f = open(sys.argv[1])
     input = open("input.txt","w+")
     output = open("output.txt","w+")
     line = f.readline()
