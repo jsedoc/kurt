@@ -39,14 +39,14 @@ class XTRule:
                 # tree is wrong shape, keep tranglin'.
                 continue
             if self.state == state and subtree == self.lhs:
-                # print("FOUND A MATCH.")
+                dprint("FOUND A MATCH.")
                 count += 1
         return count
 
     def apply(self, tree, statemap):
         """Returns a list of (new tree, new statemap) by applying this rule in
         all the places where it works."""
-        # print("APPLYING", self.lhs, "to", tree, statemap)
+        dprint("APPLYING", self.lhs, "to", tree, statemap)
         out = []
         my_vars = variables_to_paths(self.lhs)
         for path, state in statemap.items():
@@ -76,7 +76,7 @@ class XTRule:
                 else:
                     newtree[path] = newsubtree
                     out.append((newtree, newstates_with_prepend))
-        # print("PRODUCED:", out)
+        dprint("PRODUCED:", out)
         return out
     
     def __str__(self):
