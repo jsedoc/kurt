@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-DEBUGGING = False
+DEBUGGING = True
 
 def dprint(*args, **kwargs):
     if DEBUGGING:
