@@ -63,6 +63,8 @@ def transduce(tree, rules, initial):
                                 complete.append(newss)
                             else:
                                 nextgen.append(newss)
+                        break
+
         if nextgen:
             dprint(nextgen)
             progress = True
