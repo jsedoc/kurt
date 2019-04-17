@@ -71,13 +71,13 @@ def transduce(tree, rules, initial):
             current = nextgen
     return complete
 
-def create_data():
+def create_data(tree_file, rule_file, input_file, output_file):
     count = 0
     tried = 0
-    rules = loadrules("deterministic.yaml")
-    f = open(sys.argv[1])
-    input = open("input.txt","w+")
-    output = open("output.txt","w+")
+    rules = loadrules(rule_file)
+    f = open(tree_file)
+    input = open(input_file,"w+")
+    output = open(output_file,"w+")
     line = f.readline()
     while line:
         tried = tried+1
@@ -98,19 +98,10 @@ def create_data():
     output.close()
 
 def main():
-    create_data()
-#    tr = Tree.fromstring("(1 (2 3 4) (5 (6 (7 8 9))))")
-#    tr = Tree.fromstring("(1 (2 3 40) (5 (6 (7 8 20))))")
-#    tr.pretty_print()
-#    rules = loadrules("deterministic.yaml")
-#    theresults = transduce(tr, rules, "q")
-#    if(len(theresults) > 0):
-#        print(tr)   
-#        print(theresults[0].tree)
-#    print("[[[done]]]")
-    
-#    for (i, result) in enumerate(theresults):
-#        print("*** {0} ***".format(i))
-#        print(result.tree)
+    tree_file = sys.argv[1]
+    rule_file = sys.argv[2]
+    input_file = sys.argv[3]
+    output_file = sys.argv[4]
+    create_data(tree_file, rule_file, input_file, output_file)
 
 if __name__ == "__main__": main()

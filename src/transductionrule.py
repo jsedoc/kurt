@@ -23,11 +23,11 @@ class XTRule:
         my_vars = variables_to_paths(self.lhs)
         ## Check whether, once you replace the right parts of the given tree
         ## with variables, it's equal to this rule's LHS.
-        dprint("matching this lhs:", self.lhs)
+        #dprint("matching this lhs:", self.lhs)
         for path, state in statemap.items():
             indexed = tree_index(tree, path)
             subtree = deepcopy(indexed)
-            dprint("subtree:", subtree)
+            #dprint("subtree:", subtree)
             try:
                 for (var,varpath) in my_vars:
                     if varpath is ():
@@ -39,14 +39,14 @@ class XTRule:
                 # tree is wrong shape, keep tranglin'.
                 continue
             if self.state == state and subtree == self.lhs:
-                dprint("FOUND A MATCH.")
+                #dprint("FOUND A MATCH.")
                 count += 1
         return count
 
     def apply(self, tree, statemap):
         """Returns a list of (new tree, new statemap) by applying this rule in
         all the places where it works."""
-        dprint("APPLYING", self.lhs, "to", tree, statemap)
+        #dprint("APPLYING", self.lhs, "to", tree, statemap)
         out = []
         my_vars = variables_to_paths(self.lhs)
         for path, state in statemap.items():
